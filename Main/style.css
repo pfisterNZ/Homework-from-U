@@ -1,10 +1,11 @@
-body{
+body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+header {
     margin: 10px;
-
     background-color: aqua;
     padding: 20px;
     text-align: center;
@@ -13,29 +14,56 @@ header{
     font-weight: bold;
     border-bottom: 2px solid black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
 }
 
-.container{
-    background-color: lemonchiffon;
+.container {
     display: flex;
-    direction: row;
-    justify-content: center;
-    
-
+    flex-direction: row;
+    background-color: lemonchiffon;
+    min-height: 90vh; /* Para que ocupe casi toda la pantalla */
 }
 
-.barra-lateral{    
+.barra-lateral {
+    width: 300px;
     background-color: lavender;
-    border: 5px solid black;
-    
+    border-right: 5px solid black;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.contenido-central{
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral li {
+    margin-bottom: 15px;
+}
+
+.barra-lateral button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.barra-lateral button:hover {
+    background-color: lightgray;
+}
+
+.contenido-central {
+    flex: 1;
+    padding: 50px;
     background-color: lightcyan;
-    border: 5px solid black;
-    
+    border-left: 5px solid black;
+    box-sizing: border-box;
 }
 
-
-
+.contenido-central h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
