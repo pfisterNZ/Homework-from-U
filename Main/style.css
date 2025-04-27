@@ -1,11 +1,41 @@
 body{
-    padding: 0;
-    margin: 0;
     font-family: Arial, sans-serif;
 }
 
 header{
+    margin: 10px;
+
     background-color: aqua;
     padding: 20px;
-    border-radius: 5%;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
+
+.container{
+    background-color: lemonchiffon;
+    display: flex;
+    direction: row;
+    justify-content: center;
+    
+
+}
+
+.barra-lateral{    
+    background-color: lavender;
+    border: 5px solid black;
+    
+}
+
+.contenido-central{
+    background-color: lightcyan;
+    border: 5px solid black;
+    
+}
+
+
+
