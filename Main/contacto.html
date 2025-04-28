@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Clinica del Sol</title>
     <link rel="stylesheet" href="/Main/style.css">
 </head>
 
@@ -21,6 +21,9 @@
             <picture><img src="" alt=""></picture>
             <nav class="menu-lateral">
                 <ul>
+                    <li><a href="/Main/index.html">
+                            <button>Inicio</button>
+                        </a>
                     <li><a href="/Main/AreasMedicas/ClinicaGeneral/ClinicaGeneral.html">
                             <button>Clinica General</button>
                         </a>
@@ -50,8 +53,29 @@
             </nav>
         </div>
         <div class="contenido-central">
-            <h2>"Excelencia en servicio médico"</h2>
-            <img src="/Assets/Img/index/cabecera_centros.jpg" alt="portada" class="img-portada">
+            <h2>Contacto con Clinica del Sol</h2>
+            <form action="/Main/submit_turno.html" method="POST" class="form-contacto">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" required>
+
+                <label for="tipo-turno">Motivo:</label>
+                <select id="tipo-turno" name="tipo-turno" required>
+                    <option value="" disabled selected>Seleccione el motivo</option>
+                    <option value="consulta">Estado del Turno</option>
+                    <option value="control">Control</option>
+                    <option value="emergencia">Emergencia</option>
+                </select>
+                <label for="consulta">Ingrese su consulta:</label>
+                <textarea id="consulta" name="consulta" placeholder="Ingrese el motivo de la consulta" rows="3"
+                    required></textarea>
+
+
+
+                <button type="submit" class="btn-enviar">Enviar Consulta</button>
+            </form>
         </div>
 
 
