@@ -83,3 +83,45 @@ header {
     max-height: auto;
     display: block;
 }
+
+
+table {
+    width: 100%;
+    height: 600px;
+    margin-left: 30vh;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    font-size: 1rem;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table img {
+    border-radius: 10%;
+}
+
+table img:hover {
+    transform: scale(1.1);
+}
